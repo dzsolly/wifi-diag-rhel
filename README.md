@@ -20,10 +20,10 @@ It checks the WiFi interface, driver, kernel module, and gives suggestions based
 
 Clone this repository and run the script:
 
-- git clone https://github.com/dzsolly/wifi-diagnostics.git
-- cd wifi-diagnostics
-- chmod +x wifi-diagnostics.sh
-- ./wifi-diagnostics.sh
+- git clone https://github.com/dzsolly/wifi-diag-rhel.git
+- cd wifi-diag-rhel
+- chmod +x wifi-diag-rhel.sh
+- ./wifi-diag-rhel.sh
 
 ------
 
