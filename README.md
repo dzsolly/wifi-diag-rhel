@@ -14,6 +14,8 @@ It checks the WiFi interface, driver, kernel module, and gives suggestions based
 ✅ Provide **driver suggestions** based on vendor (Intel, Broadcom, Realtek, Qualcomm, MediaTek)  
 ✅ General troubleshooting tips
 
+------
+
  ## 🚀 Usage
 
 Clone this repository and run the script:
@@ -22,6 +24,8 @@ git clone https://github.com/your-username/wifi-diagnostics.git
 cd wifi-diagnostics
 chmod +x wifi-diagnostics.sh
 ./wifi-diagnostics.sh
+
+------
 
 📸 Example Output
 === WiFi Diagnostics - RHEL-based system ===
@@ -62,6 +66,7 @@ Verify that NetworkManager is installed: sudo dnf install NetworkManager
 
 ✅ Diagnostics finished.
 
+------
 
 📦 Supported Vendors
 
