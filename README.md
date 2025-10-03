@@ -28,6 +28,7 @@ Clone this repository and run the script:
 ------
 
 📸 Example Output
+
 === WiFi Diagnostics - RHEL-based system ===
 
 🔹 Step 1: Interfaces status
