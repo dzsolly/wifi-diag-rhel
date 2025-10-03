@@ -1,20 +1,20 @@
-# wifi-diag-rhel
-WiFi Diagnostics Script for RHEL-based Systems
+# wifi-diag-rhel - WiFi Diagnostics Script for RHEL-based Systems
+
 
 This repository contains a simple **bash script** that helps you diagnose and troubleshoot WiFi issues on **RHEL and its alternatives** (CentOS, Rocky, AlmaLinux, Oracle Linux, etc.).  
 It checks the WiFi interface, driver, kernel module, and gives suggestions based on the detected hardware vendor.
 
 ## 📋 Features
-- ✅ Check WiFi interfaces status  
-- ✅ Check WiFi radio (enabled/disabled)  
-- ✅ Detect hardware/software blocks with **rfkill**  
-- ✅ List available WiFi networks  
-- ✅ Detect WiFi hardware and drivers with **lspci**  
-- ✅ Check loaded kernel modules  
-- ✅ Provide **driver suggestions** based on vendor (Intel, Broadcom, Realtek, Qualcomm, MediaTek)  
-- ✅ General troubleshooting tips
+✅ Check WiFi interfaces status  
+✅ Check WiFi radio (enabled/disabled)  
+✅ Detect hardware/software blocks with **rfkill**  
+✅ List available WiFi networks  
+✅ Detect WiFi hardware and drivers with **lspci**  
+✅ Check loaded kernel modules  
+✅ Provide **driver suggestions** based on vendor (Intel, Broadcom, Realtek, Qualcomm, MediaTek)  
+✅ General troubleshooting tips
 
-- ## 🚀 Usage
+ ## 🚀 Usage
 
 Clone this repository and run the script:
 
@@ -54,11 +54,11 @@ wl                123456  0
    On RHEL-based systems: sudo dnf install akmod-wl broadcom-wl
 
 💡 General Suggestions:
-- If the module is not loaded, try: sudo modprobe <module>
-- If WiFi is blocked: sudo rfkill unblock wifi
-- If no driver is found, install the proper package from EPEL or RPM Fusion.
-- Ensure the interface is managed: nmcli device set <interface> managed yes
-- Verify that NetworkManager is installed: sudo dnf install NetworkManager
+If the module is not loaded, try: sudo modprobe <module>
+If WiFi is blocked: sudo rfkill unblock wifi
+If no driver is found, install the proper package from EPEL or RPM Fusion.
+Ensure the interface is managed: nmcli device set <interface> managed yes
+Verify that NetworkManager is installed: sudo dnf install NetworkManager
 
 ✅ Diagnostics finished.
 
