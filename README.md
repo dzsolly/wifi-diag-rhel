@@ -59,11 +59,11 @@ wl                123456  0
    On RHEL-based systems: sudo dnf install akmod-wl broadcom-wl
 
 💡 General Suggestions:
-If the module is not loaded, try: sudo modprobe <module>
-If WiFi is blocked: sudo rfkill unblock wifi
-If no driver is found, install the proper package from EPEL or RPM Fusion.
-Ensure the interface is managed: nmcli device set <interface> managed yes
-Verify that NetworkManager is installed: sudo dnf install NetworkManager
+- If the module is not loaded, try: sudo modprobe <module>
+- If WiFi is blocked: sudo rfkill unblock wifi
+- If no driver is found, install the proper package from EPEL or RPM Fusion.
+- Ensure the interface is managed: nmcli device set <interface> managed yes
+- Verify that NetworkManager is installed: sudo dnf install NetworkManager
 
 ✅ Diagnostics finished.
 
