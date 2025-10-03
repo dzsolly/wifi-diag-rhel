@@ -20,10 +20,10 @@ It checks the WiFi interface, driver, kernel module, and gives suggestions based
 
 Clone this repository and run the script:
 
-git clone https://github.com/your-username/wifi-diagnostics.git
-cd wifi-diagnostics
-chmod +x wifi-diagnostics.sh
-./wifi-diagnostics.sh
+- git clone https://github.com/your-username/wifi-diagnostics.git
+- cd wifi-diagnostics
+- chmod +x wifi-diagnostics.sh
+- ./wifi-diagnostics.sh
 
 ------
 
@@ -78,6 +78,7 @@ Verify that NetworkManager is installed: sudo dnf install NetworkManager
 | **Qualcomm** | `ath9k`, `ath10k`, `ath11k`                 |
 | **MediaTek** | `mt76`, `rt2800pci`, `rt2800usb`            |
 
+------
 
 📝 License
 
