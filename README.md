@@ -1,4 +1,4 @@
-# wifi-diag-rhel - WiFi Diagnostics Script for RHEL-based Systems
+# WiFi Diagnostics Script for RHEL-based Systems
 
 
 This repository contains a simple **bash script** that helps you diagnose and troubleshoot WiFi issues on **RHEL and its alternatives** (CentOS, Rocky, AlmaLinux, Oracle Linux, etc.).  
