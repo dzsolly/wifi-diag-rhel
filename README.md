@@ -73,7 +73,7 @@ wl                123456  0
 
 ------
 
-📦 Supported Vendors
+## 📦 Supported Vendors
 
 | Vendor       | Recommended Drivers                         |
 | ------------ | ------------------------------------------- |
@@ -85,6 +85,6 @@ wl                123456  0
 
 ------
 
-📝 License
+## 📝 License
 
 This project is released under the MIT License.
