@@ -27,8 +27,9 @@ Clone this repository and run the script:
 
 ------
 
-📸 Example Output
+## 📸 Example Output
 
+```bash
 === WiFi Diagnostics - RHEL-based system ===
 
 🔹 Step 1: Interfaces status
@@ -55,6 +56,8 @@ MyWiFiNetwork    Infra  6     54 Mbit/s  80   ▂▄▆█  WPA2
 wl                123456  0
 
 🔹 Step 7: Driver suggestion
+```
+
 ⚠️ Broadcom card detected → try drivers: wl (proprietary) or b43/brcmfmac (open source).
    On RHEL-based systems: sudo dnf install akmod-wl broadcom-wl
 
