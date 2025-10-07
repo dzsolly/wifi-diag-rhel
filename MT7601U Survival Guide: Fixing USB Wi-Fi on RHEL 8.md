@@ -77,3 +77,35 @@ If you see, repeat the unblock command and recheck BIOS or physical Wi-Fi toggle
 ```bash
 RTNETLINK answers: Operation not possible due to RF-kill
 ```
+
+## 🔧 4. Check the adapter state via NetworkManager
+
+Run:
+```bash
+nmcli
+```
+
+You might see something like, This indicates the Wi-Fi radio is software disabled.
+```bash
+wlp0s20u2: unavailable
+        "Ralink MT7601U"
+        wifi (mt7601u), E2:4A:8B:EF:71:E0, sw disabled, hw, mtu 1500
+```
+Enable it:
+```bash
+sudo nmcli radio wifi on
+```
+
+If still unavailable:
+```bash
+rfkill list
+sudo rfkill unblock all
+sudo nmcli radio wifi on
+```
+
+Then restart the interface:
+```bash
+sudo modprobe -r mt7601u
+sudo modprobe mt7601u
+sudo systemctl restart NetworkManager
+```
