@@ -88,3 +88,12 @@ wl                123456  0
 ## 📝 License
 
 This project is released under the MIT License.
+
+## 📘 Related Guide
+
+If you’re troubleshooting issues with the Ralink MT7601U USB Wi-Fi adapter on RHEL 8 or compatible systems (Rocky, Alma, Oracle), check out my detailed write-up:
+
+👉 MT7601U Survival Guide: Fixing USB Wi-Fi on RHEL 8
+
+This document walks through the full process I used to get the adapter working — from detecting the device and checking driver status to verifying nmcli output and handling common “unavailable” states.
+It’s based on real troubleshooting steps, not just theory, so it’s worth a read before diving into your own setup.
