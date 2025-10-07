@@ -128,3 +128,51 @@ Reboot afterward:
 ```bash
 sudo reboot
 ```
+
+## 🌐 6. Connect to a Wi-Fi network
+
+Once the adapter is active, list available networks:
+```bash
+sudo nmcli dev wifi list
+```
+
+Connect:
+```bash
+sudo nmcli dev wifi connect "SSID_NAME" password "PASSWORD"
+```
+
+Verify connection. You should now see the wireless interface in a connected state with an assigned IP.
+```bash
+nmcli dev
+```
+
+## 🧭 Summary
+
+| Symptom                                                    | Cause                       | Solution                                            |
+| ---------------------------------------------------------- | --------------------------- | --------------------------------------------------- |
+| `RTNETLINK answers: Operation not possible due to RF-kill` | Radio blocked               | `rfkill unblock all`                                |
+| Interface `unavailable` in `nmcli`                         | Wi-Fi disabled              | `nmcli radio wifi on`                               |
+| `state DOWN` but visible                                   | Interface up, no connection | Use `nmcli dev wifi connect`                        |
+| No networks found                                          | Missing firmware            | `dnf install kernel-firmware` or `mt7601u-firmware` |
+
+
+## ✅ Notes
+
+Tested on Rocky Linux 8.10 (RHEL 8-compatible)
+
+- USB adapter: Ralink MT7601U
+- Kernel module: mt7601u
+- Requires NetworkManager to be enabled and running
+- Works with Realtek and Ralink chipsets after firmware installation
+
+## 🧠 Optional commands for debugging
+
+Use these to confirm firmware load status or driver initialization messages:
+
+```bash
+dmesg | grep -i firmware
+dmesg | grep -i mt7601u
+nmcli radio all
+iwconfig
+```
+
