@@ -54,3 +54,26 @@ Example output:
     Soft blocked: yes
     Hard blocked: no
 ```
+
+- Soft blocked: software-level disable (can be fixed via command)
+- Hard blocked: hardware switch or BIOS disables the radio
+
+To unblock:
+```bash
+sudo rfkill unblock all
+```
+
+Then verify:
+```bash
+rfkill list
+```
+
+Re-enable Wi-Fi via NetworkManager:
+```bash
+sudo nmcli radio wifi on
+```
+
+If you see, repeat the unblock command and recheck BIOS or physical Wi-Fi toggle keys.
+```bash
+RTNETLINK answers: Operation not possible due to RF-kill
+```
