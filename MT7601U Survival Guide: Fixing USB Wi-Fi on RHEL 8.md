@@ -109,3 +109,22 @@ sudo modprobe -r mt7601u
 sudo modprobe mt7601u
 sudo systemctl restart NetworkManager
 ```
+
+## 💾 5. Firmware installation
+
+If the device appears but does not list any Wi-Fi networks, missing firmware is likely the cause.
+
+Install the latest firmware packages:
+```bash
+sudo dnf install kernel-firmware
+```
+
+For Ralink MT7601U adapters. (Available via the ELRepo repository)
+```bash
+sudo dnf install mt7601u-firmware
+```
+
+Reboot afterward:
+```bash
+sudo reboot
+```
