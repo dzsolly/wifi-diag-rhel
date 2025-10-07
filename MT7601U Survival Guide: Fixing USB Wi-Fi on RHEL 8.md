@@ -42,3 +42,15 @@ RTNETLINK answers: Operation not possible due to RF-kill
 ```
 
 ## 📡 3. Resolve RF-Kill (radio disabled)
+
+List the current RF-kill status:
+```bash
+rfkill list
+```
+
+Example output:
+```bash
+0: phy0: Wireless LAN
+    Soft blocked: yes
+    Hard blocked: no
+```
