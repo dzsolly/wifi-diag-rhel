@@ -20,3 +20,25 @@ Bus 001 Device 004: ID 148f:7601 Ralink Technology, Corp. MT7601U Wireless Adapt
 ```
 
 ## ⚙️ 2. Check the network interfaces
+
+Run:
+```bash
+ip link show
+```
+
+You should see a wireless interface such as, If the interface exists but shows state DOWN, it means the adapter is present but not yet activated.
+```bash
+5: wlp0s20u2: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 ...
+```
+
+To manually bring it up:
+```bash
+sudo ip link set wlp0s20u2 up
+```
+
+If you see, → Continue to the next section.
+```bash
+RTNETLINK answers: Operation not possible due to RF-kill
+```
+
+## 📡 3. Resolve RF-Kill (radio disabled)
